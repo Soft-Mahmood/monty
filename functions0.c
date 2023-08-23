@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * _nop - literally does nothing
@@ -72,8 +72,7 @@ void _pstr(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @stack: pointer to stack list
  * @line_number: line opcode occurs on
  */
-void _stack(__attribute__ ((unused)) stack_t **stack,
-	    __attribute__ ((unused)) unsigned int line_number)
+void _stack(__attribute__ ((unused)) stack_t **stack, __attribute__ ((unused)) unsigned int line_number)
 {
 	sq_flag = 0;
 }
@@ -82,8 +81,7 @@ void _stack(__attribute__ ((unused)) stack_t **stack,
  * @stack: pointer to stack list
  * @line_number: line opcode occurs on
  */
-void _queue(__attribute__ ((unused))stack_t **stack,
-	    __attribute__ ((unused))unsigned int line_number)
+void _queue(__attribute__ ((unused))stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
 	sq_flag = 1;
 }
